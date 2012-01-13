@@ -44,7 +44,7 @@
 				   descriptor:(BAFormFieldDescriptor *)descriptor
 					tableView:(UITableView *)tableView
 {
-	UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.tableView.bounds.size.width, 44)];
+	UIToolbar *toolbar = [[[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.tableView.bounds.size.width, 44)] autorelease];
 	toolbar.barStyle = UIBarStyleBlackTranslucent;
 	toolbar.translucent = YES;
 	UIBarButtonItem *prevButton = [[[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"field-prev.png"]
